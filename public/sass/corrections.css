@@ -1,0 +1,10 @@
+/* 
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+} */
+.navbar{
+    border-bottom: 1px solid black;
+    box-shadow: none;
+    width: 100vw;
+}
