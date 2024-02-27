@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>About Zoliberry</title>
 
-    <link rel="stylesheet" href="/sass/navbar.css">
+     <link rel="stylesheet" href="/sass/navbar.css">
     <link rel="stylesheet" href="/sass/Home.css">
     <link rel="stylesheet" href="/sass/Mobile.css">
     <link rel="stylesheet" href="/sass/News.css">
+
     <link rel="stylesheet" href="/sass/FooterElements.css">
 
     <script src="./../js/Toggler.js" defer></script>
