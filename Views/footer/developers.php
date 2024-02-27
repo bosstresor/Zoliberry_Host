@@ -37,7 +37,7 @@
                         <div class="email">Email: <?= $_ENV['DEVELOPER_EMAIL'] ?? "vkrivx41@gmail.com" ?></div>
                         <div class="phone">Phone: <?= $_ENV['DEVELOPER_PHONE'] ?? "+250791357023" ?></div>
                         <div class="facebook">Facebook: <a href="<?= $_ENV['DEVELOPER_FACEBOOK'] ?? "facebook.com/pascalkapulo" ?>">PASCAL KAPULO</a></div>
-                        <div class="twitter">Twitter: <a href="<?= $_ENV['DEVELOPER_TWITTER'] ?? "twitter.com/@vkrkapulo" ?>">@vkrapulo</a></div>
+                        <div class="twitter">Twitter: <a href="<?= $_ENV['DEVELOPER_TWITTER'] ?? "twitter.com/@vkrkapulo" ?>">@vkrkapulo</a></div>
                     </div>
                 </div>
             </div>
