@@ -199,9 +199,9 @@
                                 </div>
                                 <div class="right-part">
                                     <div class="names">
-                                        <a href="<?=  "/authors?name=".$username ?>">
-                                            <?= $username?>
-                                        </a>
+                                        <div style="font-size: 20px">
+                                            <span><?= $username?></span>
+                                        </div>
                                     </div>
                                     <div class="email">
                                         <?= $email?>
