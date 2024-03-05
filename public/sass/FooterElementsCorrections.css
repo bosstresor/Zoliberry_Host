@@ -1,0 +1,105 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-bg-color: rgb(0, 135, 180);
+  --nav-height: 45px;
+  --nav-text-color: hsl(0, 0%, 0%);
+  --nav-bg-color: hsl(0, 0%, 100%);
+  --left-part-height: 30%;
+  --body-gap: 16px;
+  --footer-height: 300px;
+  --scale: .96;
+  --post-height: 250px;
+}
+
+:root {
+  --header_height: 10%;
+}
+
+.posts_container {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+.posts_container .header {
+  display: flex;
+  align-items: center;
+  height: var(--header_height);
+  padding: 20px;
+  background-color: var(--nav-bg-color);
+}
+.posts_container .header h1 {
+  color: var(--nav-text-color);
+}
+.posts_container .contents {
+  height: calc(100% - var(--header_height));
+  padding: 20px;
+}
+.posts_container .contents .about_intro {
+  padding: 30px 20px;
+  background-color: var(--nav-bg-color);
+}
+.posts_container .contents .about_intro p {
+  font-size: 19px;
+  color: var(--nav-text-color);
+}
+.posts_container .contents .categories {
+  padding: 10px;
+  background-color: var(--nav-bg-color);
+}
+.posts_container .contents .categories li {
+  list-style: none;
+  padding: 3px 0;
+}
+.posts_container .contents .categories li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--nav-text-color);
+}
+
+.privacy_contents {
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: auto;
+}
+.privacy_contents .header {
+  padding: 15px 0;
+}
+
+.privacy_notes .header {
+  font-size: 20px;
+  font-weight: bolder;
+  color: var(--nav-text-color);
+  padding: 10px 0;
+  background: var(--nav-bg-color);
+  width: 80%;
+}
+@media screen and (max-width: 600px) {
+  .privacy_notes .header {
+    font-size: 18px;
+  }
+}
+.privacy_notes .cover {
+  color: var(--nav-text-color);
+  font-size: 20px;
+  padding: 10px 10px;
+  width: 80%;
+  background: var(--nav-bg-color);
+}
+@media screen and (max-width: 700px) {
+  .privacy_notes .cover {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .privacy_notes .cover {
+    font-size: 18px;
+    width: 100%;
+  }
+}/*# sourceMappingURL=FooterElementsCorrections.css.map */

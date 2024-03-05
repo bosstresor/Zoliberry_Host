@@ -63,7 +63,7 @@ CREATE TABLE IF NOT EXISTS Article(
 );
 
 
-CREATE OR REPLACE VIEW dashboard AS
+CREATE OR REPLACE VIEW Dashboard AS
 SELECT man.username, man.email, demo.phone, demo.manager as `twitter`
 FROM manager man
 INNER JOIN ManagerDemographics demo ON demo.manager = man.id
