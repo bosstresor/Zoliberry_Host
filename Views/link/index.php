@@ -13,6 +13,10 @@
 
     $twitter = $data['twitter'];
 
+    if ($twitter != "" || $twitter != null){
+        $twitter = substr($twitter, 1);
+    }
+
     $img = "";
     $directory = "images/Profiles/".$position."/".$username;
 
