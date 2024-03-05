@@ -7,20 +7,15 @@
     <title>Privacy and Policy</title>
 
     <link rel="stylesheet" href="/sass/navbar.css">
-    <link rel="stylesheet" href="/sass/Home.css">
-    <link rel="stylesheet" href="/sass/Mobile.css">
-    <link rel="stylesheet" href="/sass/News.css">
-
-    <link rel="stylesheet" href="/sass/FooterElements.css">
+    <link rel="stylesheet" href="/sass/FooterElementsCorrections.css">
 
     <script src="./../js/Toggler.js" defer></script>
-    <script src="./../js/TopStoriesFetcher.js" type="module"></script>
 </head>
 
 <body>
     <?php  require_once  "./../Views/Templates/Navbar.php"?>
 
-    <div class="posts_container">
+    <div class="privacy_contents">
         <div class="header">
             <h1>Privacy and Policy</h1>
         </div>
