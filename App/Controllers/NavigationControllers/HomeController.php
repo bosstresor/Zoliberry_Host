@@ -43,9 +43,9 @@
             }
 
 
-            $mobileBottomThree = $this->model->today(3, 3);
+            $mobileBottomThree = $this->model->today(4, 3);
             if (count($mobileBottomThree) < 3){
-                $mobileBottomThree = $this->model->fetchPreviously(3, 3);
+                $mobileBottomThree = $this->model->fetchPreviously(4, 3);
             }
 
             return View::make("index", "php", [
