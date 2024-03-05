@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/sass/Mobile.css">
     <link rel="stylesheet" href="/sass/News.css">
     <link rel="stylesheet" href="/sass/FooterELements.css">
+    <link rel="stylesheet" href="/sass/FooterElementsCorrections.css">
 
     <script src="./../js/Toggler.js" defer></script>
     <script src="./../js/TopStoriesFetcher.js" type="module"></script>
@@ -19,16 +20,15 @@
 <body>
     <?php  require_once  "./../Views/Templates/Navbar.php"?>
 
-    <div class="posts_container">
+    <div class="devs_container">
         <div class="header">
             <h1>Developers of <?= $_ENV['WEBISTE_NAME'] ?? "Zoliberry"?></h1>
         </div>
         <div class="contents">
-            <div class="advert_header">
-                <div class="dev_head">
+                <div class="dev-head">
                     This webiste "<?= $_ENV['WEBISTE_NAME'] ?? "Zoliberry"?>" was developed by
                 </div>
-                <div class="details">
+                <div class="dev-details">
                     <div class="image">
                         <img src="/images/dev/developer.png" alt="No image found.">
                     </div>
@@ -37,10 +37,9 @@
                         <div class="email">Email: <?= $_ENV['DEVELOPER_EMAIL'] ?? "vkrivx41@gmail.com" ?></div>
                         <div class="phone">Phone: <?= $_ENV['DEVELOPER_PHONE'] ?? "+250791357023" ?></div>
                         <div class="facebook">Facebook: <a href="<?= $_ENV['DEVELOPER_FACEBOOK'] ?? "facebook.com/pascalkapulo" ?>">PASCAL KAPULO</a></div>
-                        <div class="twitter">Twitter: <a href="<?= $_ENV['DEVELOPER_TWITTER'] ?? "twitter.com/@vkrkapulo" ?>">@vkrkapulo</a></div>
+                        <div class="twitter">Twitter: <a href="<?= $_ENV['DEVELOPER_TWITTER'] ?? "twitter.com/vkrkapulo" ?>">@vkrapulo</a></div>
                     </div>
                 </div>
-            </div>
         </div>
     </div>
 
