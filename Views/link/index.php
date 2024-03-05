@@ -12,9 +12,17 @@
     $phone = $data['phone'];
 
     $twitter = $data['twitter'];
+    $twitter = "/ttps://x.com/merci1er";
 
+    
     if ($twitter != "" || $twitter != null){
-        $twitter = substr($twitter, 1);
+        $twitter = explode("/", $twitter);
+        $twitter = $twitter[count($twitter) - 1];
+
+        if (str_contains($twitter, "@")){
+            $twitter = substr($twitter, 1);
+        }
+        
     }
 
     $img = "";
