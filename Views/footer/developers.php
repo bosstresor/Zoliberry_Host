@@ -34,10 +34,13 @@
                     </div>
                     <div class="description">
                         <div class="names">Names: <?= $_ENV['DEVELOPER_NAME'] ?? "PASCAL KAPULO" ?></div>
+                        <div class="names">Field: Software Developer</div>
                         <div class="email">Email: <?= $_ENV['DEVELOPER_EMAIL'] ?? "vkrivx41@gmail.com" ?></div>
                         <div class="phone">Phone: <?= $_ENV['DEVELOPER_PHONE'] ?? "+250791357023" ?></div>
-                        <div class="facebook">Facebook: <a href="<?= $_ENV['DEVELOPER_FACEBOOK'] ?? "facebook.com/pascalkapulo" ?>">PASCAL KAPULO</a></div>
-                        <div class="twitter">Twitter: <a href="<?= $_ENV['DEVELOPER_TWITTER'] ?? "twitter.com/vkrkapulo" ?>">@vkrapulo</a></div>
+                        <div class="facebook">Facebook: 
+                            <a target="blank" href="https://www.facebook.com/<?= $_ENV['DEVELOPER_FACEBOOK']?>"><?= $_ENV['DEVELOPER_FACEBOOK']?></a></div>
+                        <div class="twitter">Twitter: 
+                            <a target="blank" href="https://www.twitter.com/<?= $_ENV['DEVELOPER_TWITTER']?>"><?= $_ENV['DEVELOPER_TWITTER']?></a></div>
                     </div>
                 </div>
         </div>
