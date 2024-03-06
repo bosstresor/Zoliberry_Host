@@ -7,10 +7,6 @@
     <title>Developers</title>
 
     <link rel="stylesheet" href="/sass/navbar.css">
-    <link rel="stylesheet" href="/sass/Home.css">
-    <link rel="stylesheet" href="/sass/Mobile.css">
-    <link rel="stylesheet" href="/sass/News.css">
-    <link rel="stylesheet" href="/sass/FooterELements.css">
     <link rel="stylesheet" href="/sass/FooterElementsCorrections.css">
 
     <script src="./../js/Toggler.js" defer></script>
