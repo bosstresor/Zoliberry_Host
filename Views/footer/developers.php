@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developers</title>
+    <title>Developers of Zoliberry</title>
 
     <link rel="stylesheet" href="/sass/navbar.css">
     <link rel="stylesheet" href="/sass/FooterElementsCorrections.css">
