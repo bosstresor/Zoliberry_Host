@@ -26,7 +26,6 @@
   padding: 0 15px;
   margin-bottom: 20px;
 }
-
 .stats_nav .manage {
   height: 100%;
   display: flex;
@@ -34,7 +33,6 @@
   justify-content: center;
   gap: auto;
 }
-
 .stats_nav .manage a {
   background: var(--body-bg-color);
   text-decoration: none;
@@ -42,11 +40,9 @@
   padding: 10px;
   border-radius: 3px;
 }
-
 .stats_nav .manage a:hover {
-  opacity: .9;
+  opacity: 0.9;
 }
-
 .stats_nav .info {
   height: 100%;
   display: flex;
@@ -54,7 +50,6 @@
   justify-content: center;
   gap: 15px;
 }
-
 .stats_nav .info .count, .stats_nav .info .text {
   height: 100%;
   background: var(--body-bg-color);
@@ -65,11 +60,9 @@
   color: white;
   border-radius: 3px;
 }
-
 .stats_nav .info .count {
   width: 35px;
 }
-
 .stats_nav .info .text {
   padding: 0 10px;
 }
@@ -87,7 +80,6 @@
   flex-wrap: wrap;
   overflow: auto;
 }
-
 .authors_stats_container .stats {
   width: 300px;
   height: 100px;
@@ -95,15 +87,12 @@
   padding: 10px;
   border-radius: 3px;
 }
-
 .authors_stats_container .stats:hover {
-  opacity: .9;
+  opacity: 0.9;
 }
-
 .authors_stats_container .stats .username, .authors_stats_container .stats .articles, .authors_stats_container .stats .views {
   color: white;
 }
-
 .authors_stats_container .stats .username {
   font-size: 24px;
   padding: 5px 0;
@@ -113,20 +102,18 @@
   height: 100%;
   width: 100%;
 }
-
 .stats_contents .header {
   height: 40px;
   background: var(--body-bg-color);
   color: white;
   padding: 0 20px;
   font-size: 17px;
-  letter-spacing: .3px;
+  letter-spacing: 0.3px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: auto;
 }
-
 .stats_contents .stats {
   margin: 20px 0;
   width: 350px;
@@ -141,13 +128,10 @@
   gap: auto;
   flex-direction: column;
 }
-
 .stats_contents .stats:hover {
-  opacity: .9;
+  opacity: 0.9;
 }
-
 .stats_contents .stats .articles, .stats_contents .stats .views {
   font-size: 24px;
   padding: 5px 0;
-}
-/*# sourceMappingURL=Stats.css.map */
+}/*# sourceMappingURL=Stats.css.map */

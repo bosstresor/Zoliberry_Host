@@ -45,9 +45,6 @@
         </div>
         <div class="operation-links">
             <div class="link">
-                <a href="/AdvertiseWithUs">Advertise with us</a>
-            </div>
-            <div class="link">
                 <a href="/AboutUs">About us</a>
             </div>
             <div class="link">

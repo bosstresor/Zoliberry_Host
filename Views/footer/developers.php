@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developers of Zoliberry</title>
+    <title>Developers</title>
 
     <link rel="stylesheet" href="/sass/navbar.css">
     <link rel="stylesheet" href="/sass/FooterElementsCorrections.css">
@@ -29,13 +29,28 @@
                         <img src="/images/dev/developer.png" alt="No image found.">
                     </div>
                     <div class="description">
-                        <div class="names">Names: <?= $_ENV['DEVELOPER_NAME'] ?? "PASCAL KAPULO" ?></div>
-                        <div class="names">Field: Software Developer</div>
-                        <div class="email">Email: <?= $_ENV['DEVELOPER_EMAIL'] ?? "vkrivx41@gmail.com" ?></div>
-                        <div class="phone">Phone: <?= $_ENV['DEVELOPER_PHONE'] ?? "+250791357023" ?></div>
-                        <div class="facebook">Facebook: 
-                            <a target="blank" href="https://www.facebook.com/<?= $_ENV['DEVELOPER_FACEBOOK']?>"><?= $_ENV['DEVELOPER_FACEBOOK']?></a></div>
-                        <div class="twitter">Twitter: 
+                        <div class="names">
+                            <span>Names:</span>
+                            <span><?= $_ENV['DEVELOPER_NAME'] ?? "PASCAL KAPULO" ?></span>
+                        </div>
+                        <div class="names">
+                            <span>Field:</span> 
+                            <span>Software Developer</span>
+                        </div>
+                        <div class="email">
+                            <span>Email:</span> 
+                            <span><?= $_ENV['DEVELOPER_EMAIL'] ?? "vkrivx41@gmail.com" ?>
+                        </div>
+                        <div class="phone">
+                            <span>Phone:</span> 
+                            <span><?= $_ENV['DEVELOPER_PHONE'] ?? "+250791357023" ?></span>
+                        </div>
+                        <div class="facebook">
+                            <span>Facebook:</span>
+                            <span><a target="blank" href="https://www.facebook.com/<?= $_ENV['DEVELOPER_FACEBOOK']?>"><?= $_ENV['DEVELOPER_FACEBOOK']?></a></span>
+                        </div>
+                        <div class="twitter"><span>Twitter:</span> 
+                            <span>
                             <a target="blank" href="https://www.twitter.com/<?= $_ENV['DEVELOPER_TWITTER']?>"><?= $_ENV['DEVELOPER_TWITTER']?></a></div>
                     </div>
                 </div>

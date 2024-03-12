@@ -30,7 +30,6 @@ title {
   justify-content: flex-end;
   gap: auto;
 }
-
 .stats_contents .header div {
   margin: 0 10px;
 }
@@ -45,7 +44,6 @@ title {
   justify-content: space-between;
   gap: 10px;
 }
-
 .author_stats .article div {
   height: 100%;
   width: 100%;
@@ -58,7 +56,6 @@ title {
   gap: auto;
   color: white;
 }
-
 .author_stats .article .views {
   flex: 1 1 90px;
   display: flex;
@@ -66,15 +63,12 @@ title {
   justify-content: center;
   gap: auto;
 }
-
 .author_stats .article .title {
   font-size: 20px;
 }
-
 .author_stats .article .date {
   flex: 1 1 200px;
 }
-
 .author_stats .heading {
   height: 45px;
   margin: 20px 0;
@@ -84,7 +78,6 @@ title {
   justify-content: flex-end;
   gap: 10px;
 }
-
 .author_stats .heading .views {
   height: 100%;
   width: 80px;
@@ -97,5 +90,4 @@ title {
   padding: 0 10px;
   border-radius: 3px;
   background: var(--body-bg-color);
-}
-/*# sourceMappingURL=AuthorStats.css.map */
+}/*# sourceMappingURL=AuthorStats.css.map */

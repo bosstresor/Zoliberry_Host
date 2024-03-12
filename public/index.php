@@ -12,6 +12,7 @@
 
     use App\Controllers\{
         Destroyer,
+        SearchController,
         PageNotFoundController,
         ManagerController,
         ManagementController, CreateNewController, ManagerRegistrationController,
@@ -55,7 +56,8 @@
 
     $router->registerRoutesFromControllerAttributes(
         [
-                Destroyer::class,
+            Destroyer::class,
+            SearchController::class,
             HomeController::class,
             NewsController::class,
             MusicController::class,

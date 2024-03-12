@@ -1,4 +1,8 @@
 
+<?php if ($this->message): ?>
+    <?php header("Location: /SearchNotFound") ?>
+<?php else:?>
+
 <div class="mobile-view">
     <?php if (! empty($this->one[0])): ?>
     <div class="mobile-top">
@@ -64,7 +68,7 @@
 
         <?php foreach ($this->bottom ?? [] as $bottom): ?>
             <?php
-                    $title = str_replace(" ", "_", $bottom['title']);    
+                    $title = str_replace("_", " ", $bottom['title']);    
                 ?>
 
             <div class="story">
@@ -78,12 +82,12 @@
             </div>
             <div class="title">
                 <a class="title-link" href="<?= "/Article?title={$title}&id={$bottom['id']}" ?>">
-                    <?= $center['title'] ?>
+                    <?= $title ?>
                 </a>
             </div>
             <div class='description'>
                 <div class="tag">
-                    <?= $_ENV['WEBSITE_NAME']." ".$center['tag'] ?>
+                    <?= $_ENV['WEBSITE_NAME']." ".$bottom['tag'] ?>
                 </div>
             </div>
             <div class="date">
@@ -95,4 +99,4 @@
         <?php endforeach; ?>
     </div>
 </div>
-
+<?php endif;?>

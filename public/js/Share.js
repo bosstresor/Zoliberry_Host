@@ -4,10 +4,27 @@ const whatsappButton = document.querySelector(".whatsapp_button")
 const twitterButton = document.querySelector(".twitter_button")
 
 const init = () =>{
-    const postUrl = encodeURI(document.location.href)
-    const title = encodeURI("Hy check this post out: ")
-    const image = encodeURI("/images/logo/logo.png")
+    let postUrl = encodeURI(document.location.href)
+    const postImage = document.querySelector("#articles_profile")
+    const postTitle = document.querySelector("#articles_title").innerText
 
+    var twitterShareLink = "https://twitter.com/intent/tweet?url=" + postUrl + "&text=" + encodeURIComponent(postTitle);
+
+    var articleData = {
+        url: postUrl,
+        title: postTitle,
+        description: postTitle,
+        image: postImage
+      };
+
+    document.getElementById("og-url").content = articleData.url;
+    document.getElementById("og-title").content = articleData.title;
+    document.getElementById("og-description").content = articleData.description;
+    document.getElementById("og-image").content = articleData.image;
+
+    document.getElementById("twitter-title").content = articleData.title;
+    document.getElementById("twitter-description").content = articleData.description;
+    document.getElementById("twitter-image").content = articleData.image;
 
     facebookButton.setAttribute(
         "href",
@@ -16,18 +33,23 @@ const init = () =>{
 
     twitterButton.setAttribute(
         "href",
-        `https://www.twitter.com/share?url=${postUrl}&text=${title}`
+        twitterShareLink
     )
-}
 
-init()
+    [facebookButton, twitterButton].forEach(element => {
+        element.setAttribute(
+            "target",
+            "_blank"
+        )
+    });
+}
 
 
 // 
 
 const url = encodeURI(document.location.href)
-const title = encodeURI("Hy check this post out: ")
-const image = encodeURI("/images/logo/logo.png")
+const title = document.querySelector("#articles_profile")
+const image = document.querySelector("#articles_title").innerText
 
 whatsappButton.addEventListener("click", async (e) =>{
 
@@ -56,3 +78,5 @@ whatsappButton.addEventListener("click", async (e) =>{
 
     window.alert(output);
 })
+
+init()

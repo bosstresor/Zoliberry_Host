@@ -64,10 +64,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <meta charset="UTF-8">
-    <meta property="og:url"  content="https://www.your-domain.com/your-page.html" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Your Website Title" />
-    <meta property="og:description"  content="Your description" />
+    <meta property="og:url" id="og-url" content="">
+    <meta property="og:type" content="article">
+    <meta property="og:title" id="og-title" content="">
+    <meta property="og:description" id="og-description" content="">
+    <meta property="og:image" id="og-image" content="">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" id="twitter-title" content="">
+    <meta name="twitter:description" id="twitter-description" content="">
+    <meta name="twitter:image" id="twitter-image" content="">
 
 </head>
 <body>
@@ -117,7 +123,7 @@
             </div>
             <div class="body">
                 <div class="image">
-                    <img src="<?= "/images/Articles/".$this->data['tag']."/".$this->data['one_image'] ?>" alt="">
+                    <img id="articles_profile" src="<?= "/images/Articles/".$this->data['tag']."/".$this->data['one_image'] ?>" alt="">
 
                     <div class="logo">
                         <img src="/images/logo/logo.png" alt="No logo found.">
@@ -127,7 +133,7 @@
                             <?= $this->data['tag']?>
                         </a>
                     </div>
-                    <div class="title" style="color: white">
+                    <div class="title" style="color: white" id="articles_title">
                         <?= $this->data['title']?>
                     </div>
                 </div>

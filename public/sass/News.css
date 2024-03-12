@@ -16,6 +16,10 @@
   --post-height: 250px;
 }
 
+div {
+  text-overflow: ellipsis;
+}
+
 .second-nav {
   --nav-height: 40px;
   width: 30%;
