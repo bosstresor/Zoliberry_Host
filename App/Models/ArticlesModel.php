@@ -115,7 +115,7 @@ class ArticlesModel extends Model
     public function usernameOrEmail(string $usernameOrEmail): array
     {
         try {
-            $stmt = $this->db->prepare("SELECT * FROM dashboard WHERE username=? OR email=?");
+            $stmt = $this->db->prepare("SELECT * FROM Dashboard WHERE username=? OR email=?");
             $stmt->execute([$usernameOrEmail, $usernameOrEmail]);
 
             $data = $stmt->fetch();
