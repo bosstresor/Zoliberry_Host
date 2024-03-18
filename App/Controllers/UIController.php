@@ -37,7 +37,7 @@ class UIController
 
         $mobileBottomThree = $this->model->today($tag, 4, 3);
         if (count($mobileBottomThree) < 3){
-            $mobileBottomThree = $this->model->fetchPreviously($tag,4, 3);
+            $mobileBottomThree = $this->model->fetchPreviously($tag, 4, 3);
         }
 
         return [

@@ -93,14 +93,22 @@
                 $mobileBottomThree = $this->model->fetchPreviously(3, 3);
             }
 
+            $message = null;
 
-            return View::make("index", "php", [
+            if (empty($data)){
+                $data = [];
+                $mobileOne = [];
+                $mobileCenterThree = [];
+                $mobileBottomThree = [];
+                $message = "<h1>No data found</h1>";
+            }
+
+            $export = [
                 'data' => $data,
-                'top' => $top,
-                'one' => $mobileOne,
-                'center' => $mobileCenterThree,
-                'bottom' => $mobileBottomThree,
-                'address' => $this->address
-            ]);
+                'address' => $this->address,
+                'message' => $message
+                ];
+
+            return View::make("index", "php", $export);
         }
     }

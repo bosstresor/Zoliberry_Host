@@ -19,7 +19,7 @@ class ManagementController extends RegistrationController
     private array $consignment = [];
     private array $images = [];
 
-    private string $uploadDirectory = 'images/Articles';
+    private string $uploadDirectory = '/images/Articles';
 
     public function __construct(
         protected SessionController $session,
@@ -222,10 +222,10 @@ class ManagementController extends RegistrationController
 
 
         $this->uploadDirectory = match ($this->consignment['category']){
-            'News' => 'images/Articles/News',
-            'Sports' => 'images/Articles/Sports',
-            'Music' => 'images/Articles/Music',
-            default => 'images/Articles/Lifestyle',
+            'News' => './images/Articles/News',
+            'Sports' => './images/Articles/Sports',
+            'Music' => './images/Articles/Music',
+            default => './images/Articles/Lifestyle',
         };
 
         $name = 'article'.$this->articlesModel->randomIdCreator().'.'.$type;
