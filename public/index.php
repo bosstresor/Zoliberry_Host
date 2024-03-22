@@ -4,7 +4,7 @@
 
     require_once __DIR__."/../vendor/autoload.php";
 
-    ini_set("display_errors", 0);
+    // ini_set("display_errors", 0);
 
     const VIEW_PATH = "./../Views";
 
@@ -13,6 +13,7 @@
     use App\Controllers\{
         Destroyer,
         SearchController,
+        SitemapController,
         PageNotFoundController,
         ManagerController,
         ManagementController, CreateNewController, ManagerRegistrationController,
@@ -58,6 +59,7 @@
         [
             Destroyer::class,
             SearchController::class,
+            SitemapController::class,
             HomeController::class,
             NewsController::class,
             MusicController::class,

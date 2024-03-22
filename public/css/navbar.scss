@@ -129,7 +129,7 @@ body{
             }
 
             @include FiveHundred{
-                @include flexDisplayJustify(center, calc(var(--body-gap)));
+                @include flexDisplayJustify(center, 10px);
             }
 
             .link{
@@ -263,7 +263,10 @@ body{
     }
 
     @include FiveHundred{
-        margin: calc(var(--body-gap) * 3) 0 calc(var(--body-gap) * -2) 0;
+        margin: calc(var(--body-gap) * 3) 0 calc(var(--body-gap) * -2) 10px;
+    }
+    @include ThreeFifty{
+        margin: calc(var(--body-gap) * 3) 0 calc(var(--body-gap) * -2) 25px;
     }
 
     .welcome, .date{
@@ -317,6 +320,7 @@ body{
                 background: var(--body-bg-color);
                 @include advanceButton(var(--body-bg-color), white);
                 flex: 1 1 10%;
+
             }
         }
 

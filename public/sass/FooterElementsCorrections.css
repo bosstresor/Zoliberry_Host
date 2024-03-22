@@ -227,4 +227,109 @@
     font-size: 14px;
     font-weight: bold;
   }
+}
+
+.posts_container.contact {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: auto;
+  background: var(--nav-bg-color);
+}
+.posts_container.contact .header {
+  width: var(--standard_width);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: auto;
+  width: 100%;
+}
+.posts_container.contact .header h1 {
+  width: 100%;
+  padding: 10px 0;
+  color: var(--nav-text-color);
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: auto;
+}
+@media screen and (max-width: 700px) {
+  .posts_container.contact .header h1 {
+    font-size: 20px;
+  }
+}
+.posts_container.contact .contents {
+  width: 400px;
+}
+@media screen and (max-width: 700px) {
+  .posts_container.contact .contents {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .posts_container.contact .contents {
+    width: 300px;
+  }
+}
+.posts_container.contact .contents .error {
+  color: red;
+  font-size: 20px;
+}
+.posts_container.contact form {
+  width: var(--standard_width);
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.posts_container.contact form .feed {
+  width: 100%;
+  margin: 3px 0;
+  display: flex;
+  flex-direction: column;
+  --padding: 15px;
+}
+.posts_container.contact form .feed .error {
+  color: red;
+  font-size: 20px;
+  padding: 5px 0;
+}
+.posts_container.contact form .feed label {
+  padding: 7px 0;
+  color: var(--nav-text-color);
+}
+.posts_container.contact form .feed input {
+  height: 40px;
+  padding: 0 var(--padding);
+  font-size: 16px;
+  border: 1px solid black;
+  width: calc(var(100%) - var(--padding));
+}
+.posts_container.contact form .feed input::placeholder {
+  font-size: 15px;
+  letter-spacing: 0.8px;
+}
+.posts_container.contact form .feed textarea {
+  resize: none;
+  padding: 10px var(--padding);
+  font-size: 17px;
+  border: 1px solid black;
+  width: calc(var(100%) - var(--padding));
+}
+.posts_container.contact form .feed button {
+  height: 40px;
+  font-size: 18px;
+  background: var(--body-bg-color);
+  color: var(--nav-text-color);
+  width: 90px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  color: white;
+}
+.posts_container.contact form .feed button:hover {
+  opacity: 0.9;
+  cursor: pointer;
 }/*# sourceMappingURL=FooterElementsCorrections.css.map */

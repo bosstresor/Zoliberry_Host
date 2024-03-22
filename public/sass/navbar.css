@@ -159,7 +159,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: calc(var(--body-gap));
+    gap: 10px;
   }
 }
 .navbar .nav-center .nav-links .link {
@@ -295,7 +295,12 @@ body::-webkit-scrollbar-thumb {
 }
 @media screen and (max-width: 500px) {
   .web-services {
-    margin: calc(var(--body-gap) * 3) 0 calc(var(--body-gap) * -2) 0;
+    margin: calc(var(--body-gap) * 3) 0 calc(var(--body-gap) * -2) 10px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .web-services {
+    margin: calc(var(--body-gap) * 3) 0 calc(var(--body-gap) * -2) 25px;
   }
 }
 .web-services .welcome, .web-services .date {
