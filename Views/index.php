@@ -15,6 +15,8 @@
 
     <script src="/js/Toggler.js" defer></script>
     <script src="/js/TopStoriesFetcher.js" type="module"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9080025530861413"
+     crossorigin="anonymous"></script>
 </head>
 <body>
     <?php require_once  "./../Views/Templates/Navbar.php" ?>
