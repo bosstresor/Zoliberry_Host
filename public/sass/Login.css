@@ -353,14 +353,6 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   gap: auto;
 }
-@media screen and (max-width: 737px) {
-  .web-services .search {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: auto;
-  }
-}
 .web-services .search form {
   height: 100%;
   width: 60%;

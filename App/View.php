@@ -35,7 +35,6 @@
             return new static($view, $template, $arguments);
         }
 
-        // converting the make method strictly to a string in order to render and cast it to a string
         public function __toString(): string
         {
             return $this->render();

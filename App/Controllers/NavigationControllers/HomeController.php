@@ -59,13 +59,11 @@
         }
 
         #[Post("/")]
-        #[Route("/", "post")]
         public function search(): View
         {
             $pattern = htmlentities($_POST['home_search'] ?? null);
 
             $data = $this->model->today(3, 4);
-
             $mobileCenterThree = $this->model->today(1, 3);
 
             if (count($mobileCenterThree) < 3){
