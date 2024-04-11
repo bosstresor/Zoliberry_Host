@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/sass/Home.css">
     <link rel="stylesheet" href="/sass/Mobile.css">
     <link rel="stylesheet" href="/sass/News.css">
-
+    <meta name="google-site-verification" content="a9b4W1Q5a9xVvz2qru2bZPbDWBe3xZHncdjUI7JNwNk" />
     <script src="/js/Toggler.js" defer></script>
     <script src="/js/TopStoriesFetcher.js" type="module"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9080025530861413"
