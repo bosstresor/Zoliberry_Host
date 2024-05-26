@@ -87,9 +87,7 @@
             <div class="link">
                 <a  style="color: white;"href="/TermsAndConditions">Terms and Conditions</a>
             </div>
-            <div class="link">
-                <a style="color: white;" href="/Developers">Developers of <?= $_ENV['WEBSITE_NAME'] ?? "Zoliberry" ?></a>
-            </div>
+            
         </div>
     </div>
 </footer>
