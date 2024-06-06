@@ -10,10 +10,10 @@ RUN composer require symfony/dotenv
 RUN composer require symfony/psr-container
 
 # Copy application code
-COPY . /public
+COPY . ./public
 
 # Set working directory
-WORKDIR /public
+WORKDIR ./public
 
 # Expose port
 EXPOSE 80
