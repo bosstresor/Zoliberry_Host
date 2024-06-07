@@ -1,7 +1,9 @@
 
 <link rel="shortcut icon" href="/images/logo/icon.png" type="image/x-icon">
+<h1>Zoliberry</h1>
 <?php
 
+    
     require_once __DIR__ . '/../vendor/autoload.php';
 
     // ini_set("display_errors", 0);
